@@ -1,0 +1,4 @@
+import(MASS,mvtnorm,nlme,mediation)
+export(CAPMediation,CAPMediation_D1,CAPMediation_D1_opt,CAPMediation_D1_opt_Mcov,CAPMediation_D1_Mcov,CAPMediation_coef,CAPMediation_coef_Mcov,CAPMediation_Dk,CAPMediation_boot)
+importFrom("MASS", "ginv")
+importFrom("stats", "cov", "pchisq", "pnorm", "qnorm", "quantile", "rnorm", "sd")
