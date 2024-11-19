@@ -7,6 +7,7 @@ CAPMediation_coef_Mcov<-function(X,M.cov,Y,theta)
   # theta: projection vector
 
   n<-length(Y)
+  p<-ncol(M.cov[,,1])
 
   q<-ncol(X)-1
   if(is.null(colnames(X)))

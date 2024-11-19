@@ -50,9 +50,6 @@ X <- get("X", env.data.example)
 Y <- get("Y", env.data.example)
 M<-get("M",env.data.example)
 
-n<-length(Y)
-p<-ncol(M[[1]])
-
 gamma.mat0<-matrix(runif(p),nrow=p,ncol=p)
 gamma.mat<-qr.Q(qr(gamma.mat0))
 for(j in 1:p)
@@ -64,7 +61,7 @@ if(gamma.mat[which.max(abs(gamma.mat[,j])),j]<0)
  }
  Gamma<-gamma.mat
 # get bootstrap result
- re.boot<-CAPMediation_boot(X,M,Y,theta=Gamma[,2],H=NULL)
+# re.boot<-CAPMediation_boot(X,M,Y,theta=Gamma[,2],H=NULL)
 
 
 }

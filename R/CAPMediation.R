@@ -29,10 +29,7 @@
 #' X <- get("X", env.data.example)
 #' Y <- get("Y", env.data.example)
 #' M<-get("M",env.data.example)
-#' n<-length(Y)
-#' p<-ncol(M[[1]])
 #' re<-CAPMediation(X,M,Y,H=NULL)
-#'
 #'
 #' @keywords models
 #'
