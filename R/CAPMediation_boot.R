@@ -25,7 +25,8 @@
 #' X <- get("X", env.data.example)
 #' Y <- get("Y", env.data.example)
 #' M<-get("M",env.data.example)
-#'
+#' n<-length(Y)
+#' p<-ncol(M[[1]])
 #' gamma.mat0<-matrix(runif(p),nrow=p,ncol=p)
 #' gamma.mat<-qr.Q(qr(gamma.mat0))
 #' for(j in 1:p)
